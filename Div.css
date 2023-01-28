@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-image: linear-gradient(to right bottom, #dd34de, #c23be1, #a540e3, #8645e3, #6048e1);
+    font-family:'Poppins',cursive;
+    transition: 0.5s;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.card {
+    background-color:white;
+    width: 400px;
+    height: 600px;
+    align-self: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+.bg-img img {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.logo img {
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid #6FE16C;
+    padding: 2px;
+    background-color: rgb(250, 242, 242);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    margin-left:140px;
+    margin-top: -70px;
+    transition: all 0.5s ease-out;
+}
+.logo img:hover {
+    transform: scale(1.5);
+}
+h1 {
+    color: #0881DD;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+p {
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+span p {
+    padding: 10px;
+    letter-spacing: 1px;
+    justify-content: center;
+}
+.media ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.media ul li {
+    list-style: none;
+}
+.media ul li img {
+    width: 50px;
+    border: 2px solid rgb(255, 254, 254);
+    border-radius: 50%;
+}
+.media ul li img:hover {
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+}
+.btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.btn .follow,
+.msg {
+    padding: 15px 50px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #c23be1;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: transform 0.5s ease;
+
+}
+.msg:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 8px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: #0881DD;
+    transform: scale(0.9);
+
+}
+.follow:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 8px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    background-color: #0881DD;
+    transform: scale(0.9);
+
+}
+.dot img {
+    position: absolute;
+    margin-left: 360px;
+    margin-top: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+h5 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.721);
+}
