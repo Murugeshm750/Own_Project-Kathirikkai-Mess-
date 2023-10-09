@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathirikkai Mess</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/public/css/style.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+
+
+</head>
+<body>
+    <div class="nav-banner" id="banner">
+        <div class="menu-bar" >
+            <button  onclick="openNav()"><img src="/images/hamburger.png"></button>
+        </div>
+        <div id="loading-spinner">
+          <!-- Replace this with your loading symbol (e.g., a spinner GIF) -->
+          Loading...
+      </div>
+        <div class="food-content" id="aboutFood">
+           <button onclick="openLookup()">?</button>
+        </div>
+    </div>
+    <div class="food-content-para" id="close">
+        <p>Food is not just substenance;it's an art that tantailzes our senses. <br>From spicy curries to delicate
+        pastries,the world's cuisines offer a delightful journey. <br>
+    Food is a universal language,uniting people from diverse cultures around a table <br>
+Cooking is an exprssion of love,care and creativity on a plate. <br><br>
+"Never underestimate the power of good food.Eating delicious food can be a life changing experience."   -Shon Mehta</p>
+
+<button class="close" onclick="closeLookup()">Close</button>
+    </div>
+    <div class="nav-container" id="menuBar">
+        <div class="menus">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menus">Menu</a>
+            <a href="#ordermenu">Items</a>
+             <a href="#contact">Contact</a> 
+        </div>
+        <div class="logo">
+            <!-- <img src="/images/b1.png"> -->
+            <img src="/images/cheff.webp" alt="">
+        </div>
+        <div class="closing-btn">
+            <button onclick="closeNavBar()"><h1>></h1></button>
+        </div>
+    </div>
+    <div class="order-form">
+
+    </div>
+    <section id="home">
+        
+  <div class="left-box">
+    <!-- <p>Good Food is Good Mood</p> -->
+    <img src="/images/lookup2.jpg" alt="">
+  </div>
+  <!-- <div class="food-dialouge">
+    <p>Good Food is Good Mood</p>
+  </div> -->
+  <div class="name">
+    
+    <h1>கத்தரிக்காய் மெஸ்</h1><br>
+    <!-- <h2>மெஸ்</h2> -->
+    <p>Home Made Food</p> <br>
+    <button id="order" onclick="openOrderBox()">Order</button>
+  </div>
+ <!-- <div class="img-box-container">
+    <div class="img-box1">
+        <img src="/images/veg meal.jpg">
+      </div>
+      <div class="img-box2">
+        <img src="/images/fish.jpg" >
+      </div>
+      <div class="img-box3">
+        <img src="/images/chicken.jpg">
+      </div>
+      <div class="img-box4">
+        <img src="/images/prawn.jpg" >
+      </div>
+ </div> -->
+  <!-- <div class="right-box">
+     <img src="/images/cheff.webp">
+     <img src="/images/bg-btn.jpg"> 
+
+  </div> -->
+  <div class="bottom-img">
+    <img src="/images/location.png">
+    <h1>Malumichampatti</h1>
+    <!-- <img src="/images/bg-btn.jpg" alt=""> -->
+  </div>
+  <div class="order-box" id="orderBox">
+    <form action="" id="orderForm">
+      <h1>Order Form</h1>
+      <button id="removeOrder" onclick="closeOrderBox()">X</button>
+      <input type="text" placeholder="Name" id="name" name="Name" required>
+      <input type="tel" placeholder="Mobile Number" id="mobile" name="Mobile" required>
+      <label for="OrderType">Choose an Order Item:</label>
+      <select name="OrderItem" id="OrderItem"  required>
+        <option value="Tea">Tea</option>
+        <option value="Coffe">Coffe</option>
+        <option value="Vada">Vada</option>
+        <option value="Pongal">Pongal</option>
+        <option value="Lemon Rice">Lemon Rice</option>
+        <option value="Curd Rice">Curd Rice</option>
+        <option value="Tamarind Rice">Tamarind Rice</option>
+        <option value="Food for Lunch">Food for Lunch</option>
+        <option value="Food for Dinner">Food for Dinner</option>
+        <option value="Food for Both">Food for Both</option>
+      </select>
+      <input type="number" placeholder="Quantity Per Person" name="Quantity" id="quantity" required>
+      <input type="email" placeholder="Email" name="Email" id="email">
+      <textarea name="Address" placeholder="Address" id="address" cols="30" rows="10" required></textarea>
+      <input  type="text" placeholder="Near By Location" name="Location" id="location" required>
+      <!-- <textarea placeholder="Write a query" id="message" cols="30" rows="10"></textarea> -->
+      <input class="orderSubmit" type="submit" value="Submit">
+    </form>
+  </div>
+    </section>
+    <section id="about">
+      <div class="about-popup" id="about-lookup">
+        Our hotel takes pride in offering guests the comforting taste of home-cooked meals, right within the confines of our establishment.
+        Our dedicated kitchen staff skillfully prepares a variety of homemade dishes that cater to a range of tastes and dietary preferences.
+        We believe in the power of wholesome, homemade ingredients, sourcing locally whenever possible to ensure freshness and quality.
+        From hearty breakfasts to satisfying dinners, our menu boasts an array of dishes that evoke the warmth of homemade cooking.
+        Our commitment to authenticity means that we use traditional recipes passed down through generations, delivering genuine flavors.
+        We prioritize the health and well-being of our guests by maintaining the highest standards of hygiene and food safety in our kitchen.
+        <!-- Our homemade food is designed to evoke nostalgia and create a sense of comfort, making dining with us a truly heartwarming experience. -->
+        <!-- Whether you're a solo traveler or dining with family and friends, our homemade meals bring everyone together at our cozy dining spaces. -->
+        <!-- We take pride in the smiles and compliments from our patrons who appreciate the lovingly prepared, home-style dishes we serve. -->
+        <!-- At our hotel, you're not just a guest; you're family, and our homemade food is a testament to the warmth and hospitality we offer. -->
+        <button class="close" onclick="aboutcloseLookup()">Close</button>
+      </div>
+      <div class="head">
+        <!-- <h1>செட்டிநாடு சமையல் வீட்டு முறைப்படி</h1> -->
+        <h1>Chettinad cooking according to home style</h1>
+      </div>
+     
+      <div class="about-container">
+        <div class="about-content">
+          Our hotel takes pride in offering guests the comforting taste of home-cooked meals, right within the confines of our establishment.
+Our dedicated kitchen staff skillfully prepares a variety of homemade dishes that cater to a range of tastes and dietary preferences...... <br>
+          <button class="read-more" id="open-about" onclick="openAboutLookup()">Read More</button>
+        </div>
+
+        <!-- <div class="about-content">Handcrafted with Love: Our dishes are prepared from scratch, just like grandma used to make.</div>
+        <div class="about-content">Fresh Ingredients: We source the finest local ingredients to ensure the highest quality.</div>
+        <div class="about-content">Family Recipes: Passed down through generations, our recipes are a taste of nostalgia.</div>
+        <div class="about-content">Health and Taste Combined: Enjoy the perfect blend of wholesome and delicious in every bite.</div>
+        <div class="about-content">Nutritious and Balanced: Our meals are designed to be nutritious and well-balanced.</div>
+        <div class="about-content">Locally Owned and Operated: We're a proud part of the community, supporting local businesses.</div>
+        <div class="about-content">Come Home to Good Food: At our home-made food shop, you're not just a customer; you're family.</div> -->
+        <div class="kural">
+          <h1>மாறுபாடு இல்லாத உண்டி மறுத்துண்ணின் <br>
+            ஊறுபாடு இல்லை உயிர்க்கு.</h1>
+            <p>- குறள் 945 - திருவள்ளுவர்</p>
+        </div>
+      </div>
+    
+       <div class="about-img">
+        <!-- <img src="/images/full Meal1.avif" alt=""> -->
+      
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 3</div> -->
+          <img src="/images/slide2.jpg" style="width:100%">
+          <!-- <div class="text">Caption Text</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">2 / 3</div> -->
+          <img src="/images/slide3.jpg" style="width:100%">
+          <!-- <div class="text">Caption Two</div> -->
+        </div>
+        
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img src="/images/slide4.jpg" style="width:100%">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img src="/images/slide5.jpg" style="width:100%">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img src="/images/slide7.jpg" style="width:100%">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img src="/images/slide1.jpg" style="width:100%">
+          <!-- <div class="text">Caption Three</div> -->
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+
+        </div>
+      </div> 
+    </section>
+    <section id="menus">
+      <div class="menu-container">
+        <button class="menu-btn" id="showMondayMenu" onclick="showMenu('monday')"><h1>Monday</h1></button>
+        <button class="menu-btn" id="showTuesdayMenu" onclick="showMenu('tuesday')"><h1>Tuesday</h1></button>
+        <button class="menu-btn" id="showWednesdayMenu" onclick="showMenu('wednesday')"><h1>Wednesday</h1></button>
+        <button class="menu-btn" id="showThursdayMenu" onclick="showMenu('thursday')"><h1>Thursday</h1></button>
+        <button class="menu-btn" id="showFridayMenu" onclick="showMenu('friday')"><h1>Friday</h1></button>
+        <!-- <button class="menu-btn" id="payButton">Pay with PhonePe or Google Pay</button> -->
+
+        <!-- <div class="menu-btn"><button><h1>Monday</h1></button></div>
+        <div class="menu-btn"></div>
+        <div class="menu-btn"></div>
+        <div class="menu-btn"></div>
+        <div class="menu-btn"></div> -->
+      </div>
+      <div class="popup" id="openMenu">
+        <div class="dish">
+          <!-- <h1>Lunch</h1> -->
+          <div class="food-lunch" id="monday">
+            <h1>Lunch for Monday</h1><br>
+            <ol>
+              <li>White Rice</li>
+              <li>Sambar</li>
+              <li>Rasam</li>
+              <li>Cabbage fries</li>
+              <li>Papad</li>
+            </ol>
+          </div>
+          <div class="food-lunch" id="tuesday">
+            <h1>Lunch for Tuesday</h1><br>
+            <ol>
+              <li>White Rice</li>
+              <li>Sambar</li>
+              <li>Rasam</li>
+              <li>potato fries</li>
+              <li>Papad</li>
+            </ol>
+          </div>
+          <div class="food-lunch" id="wednesday">
+            <h1>Lunch for Wednesday</h1><br>
+            <ol>
+              <li>White Rice</li>
+              <li>fish curry</li>
+              <li>Rasam</li>
+              <li>fish fry</li>
+              <li>Papad</li>
+            </ol>
+          </div>
+          <div class="food-lunch" id="thursday">
+            <h1>Lunch for Thursday</h1><br>
+            <ol>
+              <li>White Rice</li>
+              <li>chicken curry</li>
+              <li>Rasam</li>
+              <li>Papad</li>
+            </ol>
+          </div>
+          <div class="food-lunch" id="friday">
+            <h1>Lunch for Friday</h1><br>
+            <ol>
+              <li>White Rice</li>
+              <li>Sambar</li>
+              <li>Rasam</li>
+              <li>carrot fries</li>
+              <li>Papad</li>
+            </ol>
+          </div>
+        </div>
+        <div class="dish">
+          <!-- <h1>Dinner</h1> -->
+          <div class="food-dinner" id="monday-dinner">
+            <h1>Dinner for Monday</h1><br>
+            <ol>
+              <li>Idly</li>
+              <li>Sambar</li>
+              <li>Cocunut Chutny</li>
+            </ol>
+          </div>
+          <div class="food-dinner" id="tuesday-dinner">
+            <h1>Dinner for Tuesday</h1><br>
+            <ol>
+              <li>Dosa</li>
+              <li>Sambar</li>
+              <li>Cocunut Chutny</li>
+            </ol>
+          </div>
+          <div class="food-dinner" id="wednesday-dinner">
+            <h1>Dinner for Wednesday</h1><br>
+            <ol>
+              <li>Chappathi</li>
+              <li>Potato cravey</li>
+            </ol>
+          </div>
+          <div class="food-dinner" id="thursday-dinner">
+            <h1>Dinner for Thursday</h1><br>
+            <ol>
+              <li>Parotta</li>
+              <li>Veg cravey</li>
+              <li>Cocunut Chutny</li>
+            </ol>
+          </div>
+          <div class="food-dinner" id="friday-dinner">
+            <h1>Dinner for Friday</h1><br>
+            <ol>
+              <li>veraity Rice</li>
+              <li>Cocunut Chutny</li>
+            </ol>
+          </div>
+        </div>
+        <div class="btn-close">
+          <button onclick="closeDishMenu()">Close</button>
+        </div>
+      </div>
+      <div class="note" id="note">
+        <h4>Note:- Click the button to know the day by day menu.</h4>
+      </div>
+    </section>
+    <section id="ordermenu">
+      <div class="bulk-order">
+        <div class="order-list">
+          <div class="dish-img"> <img src="/images/tea.jpg" alt=""></div>
+         <div class="dish-name"> <h2>Tea</h2></div>
+        </div>
+        <div class="order-list">
+          <div class="dish-img"> <img src="/images/coffe.jpg" alt=""></div>
+         <div class="dish-name"> <h2>Coffe</h2></div>
+        </div>
+        <div class="order-list">
+         <div class="dish-img"> <img src="/images/vada1.jpg" alt=""></div>
+         <div class="dish-name"> <h2>Vada</h2></div>
+        </div>
+        <div class="order-list">
+          <div class="dish-img"> <img src="/images/pongal.jpg" alt=""></div>
+         <div class="dish-name"> <h2>Pongal</h2></div>
+        </div>
+        <div class="order-list">
+          <div class="dish-img"> <img src="/images/Rava-Kesari.jpg" alt=""></div>
+         <div class="dish-name"> <h2>Rava Kesari</h2></div>
+        </div>
+        <div class="order-list">
+          <div class="dish-img"> <img src="/images/lemon-rice.jpg" alt=""></div>
+         <div class="dish-name"> <h2>Lemon Rice</h2></div>
+        </div>
+        <div class="order-list">
+          <div class="dish-img"> <img src="/images/tamarind rice.jpg" alt=""></div>
+         <div class="dish-name"> <h2>Tamarind Rice</h2></div>
+        </div>
+        <div class="order-list">
+          <div class="dish-img"> <img src="/images/curd-rice.webp" alt=""></div>
+         <div class="dish-name"> <h2>Curd Rice</h2></div>
+        </div>
+        <div class="order-list">
+          <h3>ஆர்டரின் பெயரில் சிறந்த முறையில் செய்து தரப்படும்</h3>
+        </div>
+       
+      </div>
+      <!-- <div class="desclimer">
+        <h3>ஆர்டரின் பெயரில் சிறந்த முறையில் செய்து தரப்படும்</h3>
+      </div> -->
+    </section>
+    <section id="contact">
+
+      <div class="side-img">
+        <img src="/images/bg1.jpg" alt="">
+      </div>
+      <div class="side-img1">
+        <img src="/images/bg1.jpg" alt="">
+      </div>
+      <div class="query">
+        <h2>You want more details please write a query</h2><br>
+        <button onclick="openQueryBox()">Query</button>
+      </div>
+      <div class="query-box" id="queryBox">
+        <form action="">
+          <h1>Query Form</h1>
+          <button id="remove" onclick="closeQueryBox()">X</button>
+          <input type="text" placeholder="Name" id="name" name="Name" required>
+          <input type="tel" placeholder="Mobile Number" id="mobile" name="Mobile" required>
+          <textarea placeholder="Write a query" id="message" cols="30" rows="10" name="Query"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="thanks">
+        <h1>Thank you for choosing <br>us!</h1>
+      </div>
+      <div class="shop-address">
+        <img src="/images/map.png">
+        <h3>3rd Cross, Murugan Nagar, <br>
+          Malumichampatti,<br>
+          Coimbatore - 641050.
+        </h3>
+      </div>
+      
+      <div class="footer">
+        <p>இங்கு தயார் செய்யப்படும் உணவுகள் சுத்தமானதாகவும் மற்றும் சுகாதாரமான முறையிலும்  செய்யப்படுகின்றன. <br><br><span>For more details Contact : +91 7639616507</span></p>
+      </div>
+      <div class="copy-ryt">
+        <h6>copyright &copy; <a href="https://murugesh-portfolio.web.app">Murugesh_Muruganandham</a></h6>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="/javaScript/js.js"></script>
+    <!-- <script src="/public/javaScript/js.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
